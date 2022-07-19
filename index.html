@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Employee Performance Evaluation">
+	<meta name="keywords" content="Employee, Performance, Evaluation, Dicoding">
+	<meta name="author" content="Maximillian Christianto">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+
+	<!-- css -->
+	<style>
+		html, body{
+			width: 100vw;
+			padding-bottom: 3rem;
+		}
+		*{
+			font-family: 'Quicksand', sans-serif;
+			color: rgba(131,82,77,1);
+		}
+
+		body{
+			padding: 0;
+			margin: 0;
+		}
+
+		aside{
+			width: 25%;
+		}
+
+		hr{
+			background-color: rgba(243,230,221, 1);
+			margin: 2rem 0 2rem 0;
+		}
+
+		.main-content{
+			padding: 0 1.5rem;
+		}
+
+		.article-header{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		.display-flex-row{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.sticky {
+			position: fixed;
+		    top: 0;
+		    padding: 1rem 0rem 1rem 0 !important;
+
+			background-color: rgba(243,230,221, 1) !important;
+			color: rgba(131,82,77,1) !important;
+		}
+
+		.image-setup{
+		    width: 15rem;
+		    min-width: 15rem;
+		    height: 15rem;
+		    margin: 0;
+		}
+
+		.image-setup > img{
+			width: 90%;
+			object-fit: cover;
+			object-position: center;
+			transition: 0.5s;
+		}
+
+		.image-setup > img:hover{
+			width: 100%;
+		}
+
+		#navbar{
+			display: flex;
+			justify-content: flex-end;
+			background-color: #fff;
+		    padding: 1rem 0rem 1rem 0 !important;
+			width: 100vw;
+			transition: 0.5s;
+		}
+
+		#navbar a{
+			text-decoration: none;
+			color: #000;
+			margin: 0 0.5rem;
+		}
+
+		#navbar a:nth-child(4){
+			margin: 0 2rem 0 0.5rem !important;
+		}
+
+		.section-full{
+			height: 70vh;
+			padding-top: 3rem;
+		}
+
+		.profile-photo{
+			width: 6rem;
+    		height: 7rem;
+		    margin: 1rem 0 !important;
+		    display: flex;
+		    justify-content: space-between;
+		}
+
+		.profile-photo > img{
+			width: 100%;
+		    height: 100%;
+		    object-fit: cover;
+		    object-position: center;
+    		border-radius: 15px;
+		}
+
+		.card-profile{
+			width: 50%;
+			margin-right: 1.5rem;
+		}
+
+		.card-profile-form{
+			width: 50%;
+			border-radius: 2rem;
+			padding: 1.5rem 2rem;
+			background-color: rgba(243,230,221, 0.7);
+		}
+
+		.card-review{
+			height: 10rem;
+			overflow: scroll;
+			border-radius: 2rem;
+			padding: 1.5rem 2rem;
+			background-color: rgba(243,230,221, 0.7);
+
+			-ms-overflow-style: none;  /* IE and Edge */
+  			scrollbar-width: none;  /* Firefox */
+		}
+
+		.card-review::-webkit-scrollbar {
+		  	display: none;
+		}
+
+		.card-profile-name{
+			width: 80%;
+			padding: 0 1.5rem;
+		}
+
+		#review_text{
+			width: 94%;
+			padding: 1rem;
+			margin: 1rem 0;
+			border-radius: 15px;
+		}
+
+		#review_button{
+			background-color: rgba(243,230,221, 1);
+			color: rgba(131,82,77,1);
+			border: 0;
+			padding: 0.5rem 1.5rem;
+			border-radius: 15px;
+		}
+
+		.article-review{
+		 	display: grid;
+		  	grid-template-columns: auto auto auto auto;
+		  	grid-column-gap: 1rem;
+		  	grid-row-gap: 1rem;
+		}
+
+		@media only screen and (max-width: 600px) {
+		  
+		}
+	</style>
+	<title>Employee Performance Evaluation</title>
+</head>
+<body>
+	<header id="navbar">
+		<nav>
+			<a href="#card-profile-form">Review</a>
+		</nav>
+	</header>
+
+	<main class="main-content">
+		<section class="section-full" id="responsibilities">
+			<article class="display-flex-row">
+				<aside>
+					<figure class="image-setup">
+						<img src="assets/employee-responsibilities.jpg" alt="Responsibilities">
+					</figure>
+				</aside>
+				<header class="article-header">
+					<h1>Getting A Clear Picture of an Employee’s Works</h1>
+					<p>The participation of an employee in the company’s vision can be determined by analyzing their performance. Performance evaluation is essential for understanding if an employee is ready for bigger and more important responsibilities. There might be several candidates that are up for promotions, but you can easily screen the one with professional readiness and impressive achievements through the evaluation of their performance.</p>
+					<p>Some companies also conduct evaluations when employees reach the end of their initial probationary period. Those who perform well on that evaluation are typically removed from probationary employment status. Evaluation information is stored in the employee's file and may be requested by future employers or institutions of higher education.</p>
+				</header>
+			</article>
+		</section>
+		<section class="section-full" id="performance">
+			<article class="display-flex-row">
+				<header class="article-header">
+					<h1>Screening the Top Performers</h1>
+					<p>The higher-ups of a company can use employee performance evaluation to easily figure out the top performers in the workplace. There might be employees in the company who are going above and beyond to bring in great results. You will also get to enjoy massive success and growth as a result. Make sure to recognize their efforts and reward them accordingly to motivate them to keep going, and boost their morale. You will also be able to put additional focus on their development, which will help your business a lot..</p>
+					<p>
+					The job candidate who demonstrates a growth mindset tends to be the one looking to learn new skills and sharpen existing ones. This set of traits enables them to find innovative solutions to the most challenging problems. These achievement-oriented hires are usually highly flexible, adaptable and self-driven.
+					</p>
+				</header>
+				<aside>
+					<figure class="image-setup">
+						<img src="assets/employee-performance.jpg" alt="Responsibilities">
+					</figure>
+				</aside>
+			</article>
+		</section>
+		<section class="section-full" id="goals">
+			<article class="display-flex-row">
+				<aside>
+					<figure class="image-setup">
+						<img src="assets/employee-goal.jpg" alt="Goal">
+					</figure>	
+				</aside>
+				<header class="article-header">
+					<h1>Setting New Goals</h1>
+					<p>TEmployee performance evaluations can help you set new goals for the company. You will be able to determine the important metrics of the business. For example, if the performance evaluation of the employees shows that many of your employees aren’t performing as per expectations, you can start working on their improvement and find better ways to motivate them to do better. Implementing a proper reward and recognition system can motivate your employees highly.</p>
+				</header>
+			</article>
+		</section>
+		<hr>
+		<section class="display-flex-row">
+			<section class="card-profile">
+				<section class="display-flex-row">
+					<figure class="profile-photo">
+						<img src="assets/maximillian_christianto.jpg" alt="max">
+					</figure>
+					<h2 class="card-profile-name">Maximillian Christianto</h2>
+				</section>
+				<table>
+					<tr>
+						<td>Name</td>
+						<td>:</td>
+						<td>Maximillian Christianto</td>
+					</tr>
+					<tr>
+						<td>Specialization</td>
+						<td>:</td>
+						<td>Development</td>
+					</tr>
+					<tr>
+						<td>Role</td>
+						<td>:</td>
+						<td>Frontend Developer</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<p>
+								I am a front-end developer.<br />
+								strong in javascript programming languages. Framework / libraries that are commonly used for this javascript include jquery, reactjs, react native. Proficient in php programming languages like laravel, CMS (wordpress) that combine with css and scss for better user experience.
+							</p>
+						</td>
+					</tr>
+				</table>
+			</section>
+			<section class="card-profile-form" id="card-profile-form">
+				<header>
+					<h1>Form Review</h1>
+				</header>
+				<label for="review_text">Review :</label>
+				<textarea id="review_text" rows="8" placeholder="type your review"></textarea>
+				<button type="button" onclick="addReview()" id="review_button">Input Review</button>
+			</section>
+		</section>
+		<hr>
+		<section>
+			<header class="article-header">
+				<h1>Review</h1>
+			</header>
+			<section class="article-review" id="article-review">
+				<article class="card-review">
+					<h2>22 March 2022</h2>
+					<p>
+						"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+					</p>
+				</article>
+			</section>
+		</section>
+	</main>
+
+	<footer>
+		
+	</footer>
+
+	<script>
+		window.onscroll = function() {myFunction()}
+
+		let navbar = document.getElementById("navbar")
+		let sticky = navbar.offsetTop
+
+		function myFunction() {
+		 	if (window.pageYOffset == 0) {
+		 		navbar.classList.remove("sticky")
+			}else{
+				navbar.classList.add("sticky")
+			}
+		}
+
+		function addReview(){
+			let field = document.getElementById("review_text")
+			let text = document.getElementById("article-review").innerHTML
+			document.getElementById("article-review").innerHTML = 
+            `
+            	<article class="card-review">
+					<h2>22 March 2022</h2>
+					<p>
+						${field.value}
+					</p>
+				</article>
+            `+text
+            field.value = ""
+		}
+	</script>
+</body>
+</html>
